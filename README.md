@@ -10,14 +10,13 @@ In this project we will make use of Python and AWS to create an intelligent data
   
 </p>
 
-This project will not only showcase the skill of setting up and consuming AWS services to host a website, but it will also show to use these services in creating an intelligent Natural Language Processing (NLP) service. This NLP solution will allow us to automatically populate and send intelligent emails to interested parties based on the messages they send to our website. For example, if a potential recruiter sees a particular portfolio project on the website that interests them and contacts you regarding the said project, it is possible to set up your NLP component to pick up what the tone and key phrases are in the recruiter's message. Some smart programming techniques can then be used to automatically send a response. 
+This project will not only showcase the skill of setting up and consuming AWS services to host a website, but will also demonstrate how to use these services in creating an intelligent Natural Language Processing (NLP) service. This NLP solution will allow us to automatically populate and send intelligent emails to interested parties based on the messages they send to our website. For example, if a potential recruiter sees a particular portfolio project on the website that interests them and contacts you regarding the said project, it is possible to set up your NLP component to pick up what the tone and key phrases are in the recruiter's message. Some smart programming techniques can then be used to automatically send a response. 
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Explore-AI/Pictures/master/serverless_project_process.PNG"/>
     <br>
     <em>Figure 1: Cloud Computing project System Overview</em>
-    <br>
-  <img src="assets\img\portfolio\email_intelligent_sytem_image.PNG">
+
 </p>
 
 
@@ -41,24 +40,19 @@ In **Figure 1** the solutions architecture of this project is depicted. Below fo
 >
 >- [x] **[AWS Comprehend:](https://aws.amazon.com/comprehend/)** An intelligent NLP  service capable of characterising sentiment and extracting key-phrases from the ingested text. Used to detect topics within the received webpage enquiries.
 
-## project Instructions
+## Project Steps
 
-The completion of the project involves nine distinct steps which follow on from one another sequentially. This means that you have to completely finish a particular step before you can move on to the next one.
-
-
-Brief description of each step in the 9-step project process:
-
-  [Step 1:](#1_section_id) In the first step you will create a **private** fork of this repo (EDSA Cloud-Computing template repo) that stores all of the code needed to host your static website. 
+  [Step 1:](#1_section_id) In the first step we will create a **private** fork of this repo (EDSA Cloud-Computing template repo) that stores all of the code needed to host your static website. 
     
-  [Step 2:](#2_section_id) This step is all about customising the static website to suit your needs. You will use the provided bootstrap template and general guides to modify the look and contents of the website to fit your preferences. 
+  [Step 2:](#2_section_id) This step is about customising the static website to suit our needs. We will use a bootstrap template to modify the look and contents of the website to fit our preferences. 
     
-  [Step 3:](#3_section_id) In the third step you will use AWS Amplify to serve your modified website. We provide the initial steps to begin this process, and then leave the remainder of the task as an exercise for you to understand and complete. 
+  [Step 3:](#3_section_id) In the third step we will use AWS Amplify to serve our modified website. 
   
   [Step 4:](#4_section_id) This step involves the creation of an AWS DynamoDB NoSQL database. This database will be used to store website data as and when visitors send an enquiry. 
     
-  [Step 5:](#5_section_id) Here you will create an IAM role that will give your AWS Lambda function (created in step 6) the required permissions to interact with AWS Comprehend, AWS SES, AWS DynamoDB and AWS API Gateway.
+  [Step 5:](#5_section_id) Here we will create an IAM role that will give our AWS Lambda function (created in step 6) the required permissions to interact with AWS Comprehend, AWS SES, AWS DynamoDB and AWS API Gateway.
     
-  [Step 6:](#6_section_id) In this step things get interesting. We set up the AWS Lambda function, a Numpy ARN layer, and an AWS API Gateway trigger:
+  [Step 6:](#6_section_id) In this step we set up the AWS Lambda function, a Numpy ARN layer, and an AWS API Gateway trigger:
     
    - **The AWS Lambda Function** will be used to:
         - Write data to Amazon DynamoDB;
@@ -66,27 +60,15 @@ Brief description of each step in the 9-step project process:
         - Send emails with Amazon SES.
 
    - **Numpy ARN:**
-        - AWS Lambda runs Python on a Linux operating system. This means if you want to use popular libraries such as Numpy in your lambda function, you need to configure your Linux environment accordingly. You can do this by adding layers to your lambda function. In the case of Numpy, you will be adding the relevant layer to your Linux environment.
+        - AWS Lambda runs Python on a Linux operating system. This means if we want to use popular libraries such as Numpy in your lambda function, we need to configure our Linux environment accordingly. We can do this by adding layers to our lambda function. In the case of Numpy, you will be adding the relevant layer to our Linux environment.
 
    - **The AWS API Gateway trigger** configures a publicly accessible HTTP API which listens for POST requests from the webpage. When a request is received, its content is parsed and used to invoke the connected lambda function.   
     
-  [Step 7:](#7_section_id) In step seven you will need to configure the Lambda function created previously to write incoming data from the website to the DynamoDB database created in step four.
+  [Step 7:](#7_section_id) In this step we will configure the Lambda function created previously to write incoming data from the website to the DynamoDB database created in step four.
     
-  [Step 8:](#8_section_id) This step involves the configuration of the AWS SES service so that your pipeline can send emails automatically with the help of a Lambda function.
+  [Step 8:](#8_section_id) This step involves the configuration of the AWS SES service so that our pipeline can send emails automatically with the help of a Lambda function.
     
-  [Step 9:](#9_section_id) In this final step you will be required to complete the NLP portion of the project with the use of AWS Comprehend and by defining additional program logic. At a high level, AWS Comprehend will be used to extract sentiment and key phrases from a message sent from your static website. Using programming logic, you will then define several helper methods and functions which will enable the population of an automated response if the extracted key phrases and sentiment align to specific operating conditions. 
-
----
-### 1) Fork the Template Repository <a id='1_section_id'></a>
----
-
-This repository acts as a resource containing all the requisite files and instructions that you need to successfully complete this project. To continue development and before you can move on to the following steps, you need to create a private fork of this repo using your own GitHub profile.
-
-If you have any trouble forking the repo, you might find [this link](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) helpful.
-
-| :zap: WARNING :zap:                                                                                     |
-| :--------------------                                                                                   |
-| This project represents an individual project. As such when forking this repo, you need to ensure that it is hosted *privately* within your GitHub account, free from collaboration form your peers or access from the public.| 
+  [Step 9:](#9_section_id) In this final step we will complete the NLP portion of the project with the use of AWS Comprehend and by defining additional program logic. At a high level, AWS Comprehend will be used to extract sentiment and key phrases from a message sent from your static website. Using programming logic, we will then define several helper methods and functions which will enable the population of an automated response if the extracted key phrases and sentiment align to specific operating conditions. 
 
 ---
 ### 2) Modify the Portfolio Webpage Template <a id='2_section_id'></a>
@@ -103,53 +85,8 @@ Below follows a brief description of the files in the bootstrap template:
 | Assets/img     | n/a                      | This folder contains all the images used within the website.                    |
 | css            | style.css                | This CSS (Cascading Style Sheets) file is responsible for controlling the style i.e. look and feel of the website    |
 | js             | scripts.js               | Various scripts to increase the responsiveness and utility of the website.    |
-| Project root            | index.html               | This file defines your static web page, and will be worked on when personalising the website to meet your preferences.   |
+| Project root            | index.html               | This file defines your static web page, and will be worked on when personalising the website to meet your preferences.   
 
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
-| :--------------------                                                                                   |
-| In this section of the project you are tasked with **modifying the static website template so that it represents your unique blend of technical skills**. Below you will find some helpful tips that might come handy during this website design/modification journey.  | 
-
-**Steps to modify the provided bootstrap template to make the static website your own:**
-
-  I. Open the `index.html` file with an editor of your choice i.e. Pycharm, Brackets, VS Code, etc. and customise the website according to your preference. You can find some general guidance of what to change by reading the code comments we have placed for you. Here is an example comment that you can expect to find in the `index.html` file:  
- 
-```html
-  <!-- ========= CUSTOMISE SECTION =========== -->
-  <!-- This comment instructs you on what to change and how to change it -->
-  <!-- ======================================= --> 
-```
-
-| :zap: WARNING :zap:                                                                                     |
-| :--------------------                                                                                   |
-| While you are free to modify many aspects of the webpage, you should **NOT** alter its functioning. Do not add/remove any fields from the form section, nor modify the variable names captured by the `contact_me.js` script  | 
- 
- II. Once you've modified the bootstrap template according to your preference, you can move to the next step. Here you will get your hands dirty serving the static website with the help of AWS Amplify :)
- 
-
----  
-### 3) Serve Static Web Page on AWS Amplify <a id='3_section_id'></a>
----
-
-To serve your static website, you will make use of the AWS Amplify service. As mentioned before, AWS Amplify simplifies the process of web development by providing a serverless framework which removes the need to worry about a running webserver or underlying hosting infrastructure.
-
-
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
-| :--------------------                                                                                   |
-| In this section of the project you again get the chance to showcase your cloud computing skills. You are tasked with using AWS Amplify to serve your modified website in a serverless manner. 
-
-Here it is important to **serve your website with AWS Amplify via your GitHub repository**. That way, when you make any changes to the files sitting in the `deployed` branch, AWS Amplify will automatically pick up the branch changes and re-deploy your website. | 
-
-  
-| :information_source: NOTE :information_source:                                                                                                    |
-| :--------------------                                                                                                                             |
-| By this point in the process your modified website should be running through the AWS Amplify service with a sample domain name: `branch_name.reference_number.amplifyapp.com`. You can view an example of the fully functioning website deployed with AWS Amplify [here](https://main.dajjrrhheaglb.amplifyapp.com/)|
-
-
----
-### 4) Create DynamoDb Database <a id='4_section_id'></a>
----
-
-  
 Within the proposed system, a database is required that will store all the data sent from the serverless hosted website. For this project, you will be using the AWS DynamoDB NoSQL database for this purpose. 
 
 The data sent from the website will have the following schema:
