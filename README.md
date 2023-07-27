@@ -1,26 +1,29 @@
-# Cloud Computing Predict
+# Cloud Computing Project
 
-#### EXPLORE Data Science Academy Cloud Computing Predict
+#### Cloud Computing Project
 ## Overview
 
-In this predict you will make use of Python and AWS to create an intelligent data science portfolio website. At a high-level, the website will be hosted in a serverless manner on AWS; showcasing your amazing data science, machine learning and AI projects. 
+In this project we will make use of Python and AWS to create an intelligent data science portfolio website. At a high-level, the website will be hosted in a serverless manner on AWS; showcasing your amazing data science, machine learning and AI projects. 
 
 <p align="center">
   <img src="https://github.com/Explore-AI/Pictures/blob/master/ezgif.com-gif-maker.gif?raw=true"/>
+  
 </p>
 
-This predict will not only teach you the valuable skill of setting up and consuming AWS services to host a website, but it will also teach you how to use these services in creating an intelligent Natural Language Processing (NLP) service. This NLP solution will allow you to automatically populate and send intelligent emails to interested parties based on the messages they send to you through the website. For example, if a potential recruiter sees a particular portfolio project on your website that interests them and contacts you regarding the said project, it is possible to set up your NLP component to pick up what the tone and key phrases are in the recruiter's message. Some smart programming techniques can then be used to automatically send a response. 
+This project will not only showcase the skill of setting up and consuming AWS services to host a website, but it will also show to use these services in creating an intelligent Natural Language Processing (NLP) service. This NLP solution will allow us to automatically populate and send intelligent emails to interested parties based on the messages they send to our website. For example, if a potential recruiter sees a particular portfolio project on the website that interests them and contacts you regarding the said project, it is possible to set up your NLP component to pick up what the tone and key phrases are in the recruiter's message. Some smart programming techniques can then be used to automatically send a response. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Explore-AI/Pictures/master/serverless_predict_process.PNG"/>
+  <img src="https://raw.githubusercontent.com/Explore-AI/Pictures/master/serverless_project_process.PNG"/>
     <br>
-    <em>Figure 1: Cloud Computing Predict System Overview</em>
+    <em>Figure 1: Cloud Computing project System Overview</em>
+    <br>
+  <img src="assets\img\portfolio\email_intelligent_sytem_image.PNG">
 </p>
 
 
-In **Figure 1** the solutions architecture of this predict is depicted. Below follows a brief description of each module in the system:
+In **Figure 1** the solutions architecture of this project is depicted. Below follows a brief description of each module in the system:
 
->- [x] **[GitHub Template Repo:](https://github.com/)** This dedicated EXPLORE template repo which houses all the content and instructions for a student to complete the Predict. 
+>- [x] **[GitHub Template Repo:](https://github.com/)** This dedicated EXPLORE template repo which houses all the content and instructions for a student to complete the project. 
 >
 >- [x] **[AWS Lambda:](https://aws.amazon.com/lambda/)** A serverless compute instance responsible for multiple processing steps:
 >      - Stores the enquiry details within an AWS DynamoDB instance for later retrieval.
@@ -38,12 +41,12 @@ In **Figure 1** the solutions architecture of this predict is depicted. Below fo
 >
 >- [x] **[AWS Comprehend:](https://aws.amazon.com/comprehend/)** An intelligent NLP  service capable of characterising sentiment and extracting key-phrases from the ingested text. Used to detect topics within the received webpage enquiries.
 
-## Predict Instructions
+## project Instructions
 
-The completion of the predict involves nine distinct steps which follow on from one another sequentially. This means that you have to completely finish a particular step before you can move on to the next one.
+The completion of the project involves nine distinct steps which follow on from one another sequentially. This means that you have to completely finish a particular step before you can move on to the next one.
 
 
-Brief description of each step in the 9-step predict process:
+Brief description of each step in the 9-step project process:
 
   [Step 1:](#1_section_id) In the first step you will create a **private** fork of this repo (EDSA Cloud-Computing template repo) that stores all of the code needed to host your static website. 
     
@@ -71,19 +74,19 @@ Brief description of each step in the 9-step predict process:
     
   [Step 8:](#8_section_id) This step involves the configuration of the AWS SES service so that your pipeline can send emails automatically with the help of a Lambda function.
     
-  [Step 9:](#9_section_id) In this final step you will be required to complete the NLP portion of the predict with the use of AWS Comprehend and by defining additional program logic. At a high level, AWS Comprehend will be used to extract sentiment and key phrases from a message sent from your static website. Using programming logic, you will then define several helper methods and functions which will enable the population of an automated response if the extracted key phrases and sentiment align to specific operating conditions. 
+  [Step 9:](#9_section_id) In this final step you will be required to complete the NLP portion of the project with the use of AWS Comprehend and by defining additional program logic. At a high level, AWS Comprehend will be used to extract sentiment and key phrases from a message sent from your static website. Using programming logic, you will then define several helper methods and functions which will enable the population of an automated response if the extracted key phrases and sentiment align to specific operating conditions. 
 
 ---
 ### 1) Fork the Template Repository <a id='1_section_id'></a>
 ---
 
-This repository acts as a resource containing all the requisite files and instructions that you need to successfully complete this predict. To continue development and before you can move on to the following steps, you need to create a private fork of this repo using your own GitHub profile.
+This repository acts as a resource containing all the requisite files and instructions that you need to successfully complete this project. To continue development and before you can move on to the following steps, you need to create a private fork of this repo using your own GitHub profile.
 
 If you have any trouble forking the repo, you might find [this link](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) helpful.
 
 | :zap: WARNING :zap:                                                                                     |
 | :--------------------                                                                                   |
-| This predict represents an individual project. As such when forking this repo, you need to ensure that it is hosted *privately* within your GitHub account, free from collaboration form your peers or access from the public.| 
+| This project represents an individual project. As such when forking this repo, you need to ensure that it is hosted *privately* within your GitHub account, free from collaboration form your peers or access from the public.| 
 
 ---
 ### 2) Modify the Portfolio Webpage Template <a id='2_section_id'></a>
@@ -102,9 +105,9 @@ Below follows a brief description of the files in the bootstrap template:
 | js             | scripts.js               | Various scripts to increase the responsiveness and utility of the website.    |
 | Project root            | index.html               | This file defines your static web page, and will be worked on when personalising the website to meet your preferences.   |
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| In this section of the predict you are tasked with **modifying the static website template so that it represents your unique blend of technical skills**. Below you will find some helpful tips that might come handy during this website design/modification journey.  | 
+| In this section of the project you are tasked with **modifying the static website template so that it represents your unique blend of technical skills**. Below you will find some helpful tips that might come handy during this website design/modification journey.  | 
 
 **Steps to modify the provided bootstrap template to make the static website your own:**
 
@@ -130,9 +133,9 @@ Below follows a brief description of the files in the bootstrap template:
 To serve your static website, you will make use of the AWS Amplify service. As mentioned before, AWS Amplify simplifies the process of web development by providing a serverless framework which removes the need to worry about a running webserver or underlying hosting infrastructure.
 
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| In this section of the predict you again get the chance to showcase your cloud computing skills. You are tasked with using AWS Amplify to serve your modified website in a serverless manner. 
+| In this section of the project you again get the chance to showcase your cloud computing skills. You are tasked with using AWS Amplify to serve your modified website in a serverless manner. 
 
 Here it is important to **serve your website with AWS Amplify via your GitHub repository**. That way, when you make any changes to the files sitting in the `deployed` branch, AWS Amplify will automatically pick up the branch changes and re-deploy your website. | 
 
@@ -147,7 +150,7 @@ Here it is important to **serve your website with AWS Amplify via your GitHub re
 ---
 
   
-Within the proposed system, a database is required that will store all the data sent from the serverless hosted website. For this predict, you will be using the AWS DynamoDB NoSQL database for this purpose. 
+Within the proposed system, a database is required that will store all the data sent from the serverless hosted website. For this project, you will be using the AWS DynamoDB NoSQL database for this purpose. 
 
 The data sent from the website will have the following schema:
 
@@ -181,7 +184,7 @@ The following steps will help you set this service up within the AWS ecosystem:
     <em>Figure 2: Create a DynamoDB table</em>
   </p>
   
-  III. Give your table a relevant name, for example, `my-portfolio-data-table`. Store this name for use in later stages of the predict.
+  III. Give your table a relevant name, for example, `my-portfolio-data-table`. Store this name for use in later stages of the project.
   
   IV. In the `Primary Key` field insert `ResponsesID` and set the type to number.
   
@@ -227,7 +230,7 @@ The following steps will help you set this service up within the AWS ecosystem:
 ### 5) Create an IAM Role <a id='5_section_id'></a>
 ---
 
-In step 5 you once again get the chance to show off your cloud computing skills. This predict involves using *a lot* of AWS services, and as such we need a comprehensive IAM Role that will adequately govern the access and authority of the AWS Lambda function. In this predict you will make use of the following services:
+In step 5 you once again get the chance to show off your cloud computing skills. This project involves using *a lot* of AWS services, and as such we need a comprehensive IAM Role that will adequately govern the access and authority of the AWS Lambda function. In this project you will make use of the following services:
 
     - AWS Lambda
     
@@ -240,7 +243,7 @@ In step 5 you once again get the chance to show off your cloud computing skills.
     - AWS DynamoDB
    
   
-You therefore need an IAM role to give the Lambda function the required access to the various services that we will be using in this predict. In total, you need to create four policies for this IAM Role:
+You therefore need an IAM role to give the Lambda function the required access to the various services that we will be using in this project. In total, you need to create four policies for this IAM Role:
 
  | **Policy** | **Description** |
  |------------|-------------|
@@ -249,7 +252,7 @@ You therefore need an IAM role to give the Lambda function the required access t
  |**AWS Basic Lambda Execution Policy** | Grants the Lambda function permission to access AWS services and resources. |
  |**AWS DynamoDB Policy** | Gives the Lambda function write permissions in order to store data from the website to a designated (existing) AWS DynamoDB table. |
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
 | You are tasked with **using the AWS IAM service to set up the necessary policies as described above**. It is important to remember that the DynamoDB policy will be of type inline, and that you will need to use the specific DynamoDB table ARN associated with the table you created in [Step 4](#4_section_id) to appropriately set up this policy.| 
 
@@ -260,7 +263,7 @@ You therefore need an IAM role to give the Lambda function the required access t
   
 In this step you will set up the AWS API Gateway and the initial AWS Lambda function. This will be a three-part process:
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
 | Below is a brief description of the required three part process. You are, however, tasked with executing the three parts and little-to-no additional guidance will be give here. This is because, setting up an AWS Lambdas function is a key outcome of this course and should be something you are very familiar with by this time.| 
 
@@ -311,16 +314,16 @@ Once you have created the API Gateway, you should replace the URL of the endpoin
 ### 7) AWS Lambda Function for Writing to DynamoDB <a id='7_section_id'></a>
 ---
 
-You are now at a point in the predict where you can start building the actual lambda functionality. Initially you will start off with the simple task of using the AWS Lambda + API Gateway to write the data coming from the website form to the previously created DynamoDB database. If needed, you can familiarise yourself with the overall process as represented within **figure 1**.
+You are now at a point in the project where you can start building the actual lambda functionality. Initially you will start off with the simple task of using the AWS Lambda + API Gateway to write the data coming from the website form to the previously created DynamoDB database. If needed, you can familiarise yourself with the overall process as represented within **figure 1**.
 
   <p align="center">
-  <img src="https://raw.githubusercontent.com/Explore-AI/Pictures/master/cloud-computing-predict-dynamodb.gif" />
+  <img src="https://raw.githubusercontent.com/Explore-AI/Pictures/master/cloud-computing-project-dynamodb.gif" />
     <br>
     <em>Figure 7: Lambda writing data from the website to DynamoDB</em>
   </p> 
 
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
 | **Set up the lambda function to write the website POST data to DynamoDB**. To get the functionality displayed in figure 7, you will need to use Python to tell your AWS Lambda function what to do and how to do it. Luckily we have some stater code for you. You can use the code found [here](student_solution_files/basic_lambda_data_decoding.py) to read and decode the incoming data from the website. Then, using the boilerplate code found [here](student_solution_files/write_data_to_dynamodb.py) as starting point, you can enable your lambda function to write to DynamoDB.| 
 
@@ -351,17 +354,17 @@ When your account is promoted out of the sandbox, you can send emails to any rec
 
 | :information_source: NOTE :information_source:                                                                                                         |
 | :--------------------                                                                                                                                  |
-| You do not have to move your account out of Sandbox Mode complete the predict. However, for interest, to move out of sandbox mode you can follow [these](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html) instructions. |
+| You do not have to move your account out of Sandbox Mode complete the project. However, for interest, to move out of sandbox mode you can follow [these](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html) instructions. |
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| There are two predict-related tasks for this step. The first of these is the **verification of sender and recipient email addresses**. Here you will need to add `edsa.predicts@explore-ai.net` as a recipient address within SES. This email account forms part of our predict assessment process and will be used at a later stage for predict marking. Note that when requesting verification for this email address, *it may take up to 24 hours for confirmation to be given*. In addition to the explore email address, **you need to configure a sender and a recipient address respectively for your testing purposes**.| 
+| There are two project-related tasks for this step. The first of these is the **verification of sender and recipient email addresses**. Here you will need to add `edsa.projects@explore-ai.net` as a recipient address within SES. This email account forms part of our project assessment process and will be used at a later stage for project marking. Note that when requesting verification for this email address, *it may take up to 24 hours for confirmation to be given*. In addition to the explore email address, **you need to configure a sender and a recipient address respectively for your testing purposes**.| 
 
 #### Part 2: Programmatically send an email via Amazon SES:
 
 Having registered the necessary email addresses, you are now ready to invoke AWS SES within your lambda function to automate the sending of email messages. 
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
 | At this point we want you to once again show us your great cloud computing and python skills. The **second task involves sending a sample email to your recipient address from your sender address, using AWS SES**. Here we provide some basic guidance in the form of [this](student_solution_files/send_emails_with_ses.py) this template, which your are required to complete and to add to your lambda function in order to help you accomplish your end goal.| 
 
@@ -369,7 +372,7 @@ Having registered the necessary email addresses, you are now ready to invoke AWS
 ### 9) AWS Lambda Function for Using Amazon Comprehend <a id='9_section_id'></a>
 ---
 
-In this final step you will be building out the predict's NLP functionality with the help of AWS Comprehend. The NLP functionality will enable you to extract the overwhelming sentiment (categorical variable) from a message, as well as a list of its key phrases as determined by AWS comprehend. With the sentiment information and a list of key phrases, you can build in intelligent, automated email responses into your AWS Lambda function. To help you thoroughly understand this section, we provide a three-part breakdown wherein we describe each key element involved in the formation of an intelligent response. 
+In this final step you will be building out the project's NLP functionality with the help of AWS Comprehend. The NLP functionality will enable you to extract the overwhelming sentiment (categorical variable) from a message, as well as a list of its key phrases as determined by AWS comprehend. With the sentiment information and a list of key phrases, you can build in intelligent, automated email responses into your AWS Lambda function. To help you thoroughly understand this section, we provide a three-part breakdown wherein we describe each key element involved in the formation of an intelligent response. 
 
 The **first part** is the process description; where we go through the logic of how to use AWS comprehend to extract sentiment and key phrases. The **second part** covers the helper functions utilised; where we describe two helper functions and the main lambda function required to orchestrate an intelligent automated response. The third and **final part** is an end-to-end example; where we simulate what should be achieved once the entire AWS Lambda/AWS Comprehend/AWS SES integration is built.
 
@@ -455,9 +458,9 @@ The email_response method works as follow:
   3. A `boolean` response is given for each match detected across various configured keyword categories.
   4. Given the match, or potentially multiple matches, you can set up logic to start building an email response sequentially.
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| The final task of the predict requires you to use the provided functions and the boilerplate AWS Comprehend/AWS Lambda code found [here](student_solution_files/aggregated_lambda_function.py) to build out the full functionality of the automated predict pipeline.| 
+| The final task of the project requires you to use the provided functions and the boilerplate AWS Comprehend/AWS Lambda code found [here](student_solution_files/aggregated_lambda_function.py) to build out the full functionality of the automated project pipeline.| 
       
 
 # End-to-end Example
@@ -562,26 +565,26 @@ Remember that in the example additional keywords were present such as: `CV`, `pr
 | :--------------------                                                                                                                                  |
 | The boilerplate lambda function for the full solution can be found [here](student_solution_files/aggregated_lambda_function.py) |
 
-## Predict Assessment
+## project Assessment
 
-| :triangular_flag_on_post: PREDICT TASK :triangular_flag_on_post:                                                                                      |
+| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| Please ensure that all the below information is submitted in order to be fairly marked on your performance in completing this Predict.| 
+| Please ensure that all the below information is submitted in order to be fairly marked on your performance in completing this project.| 
 
-Once completed, your predict solution will be marked at a time indicated within the Predict Overview Slides and as communicated on Athena. To facilitate this assessment, please submit the following details via the Predict Submission tab on Athena using [this](student_solution_files/predict_detail_submission_template.csv) simple template: 
+Once completed, your project solution will be marked at a time indicated within the project Overview Slides and as communicated on Athena. To facilitate this assessment, please submit the following details via the project Submission tab on Athena using [this](student_solution_files/project_detail_submission_template.csv) simple template: 
  - Your **Name and Surname**; 
  - The **Website URL** of your deployed project as recorded in [Step 3](#3_section_id) of this guide, and 
  - Your **AWS API Gateway URL** as recorded in part 3 of [Step 6](#6_section_id). 
 
-Please also ensure that you have verified the `edsa.predicts@explore-ai.net` email address via AWS SES as instructed in step 8, part 1. 
+Please also ensure that you have verified the `edsa.projects@explore-ai.net` email address via AWS SES as instructed in step 8, part 1. 
 
-Note that while you are free to personalise many aspects of this predict, for assessment purposes you will only be awarded marks for its functionality. As such, please make every effort to ensure that your completed predict solution is able to replicate the functioning specified throughout the above instruction steps.  
+Note that while you are free to personalise many aspects of this project, for assessment purposes you will only be awarded marks for its functionality. As such, please make every effort to ensure that your completed project solution is able to replicate the functioning specified throughout the above instruction steps.  
 
 ## Conclusion
 
 If you followed the nine-step process described above correctly, you should now have a fully functioning portfolio website capable of sending intelligent email responses in an automated way. Congrats! 
 
-Following the conclusion of this predict and its assessment, you are free (and we encourage you) to tweak various aspects of the project to personalise it even further. Here are just a few ideas you can try:
+Following the conclusion of this project and its assessment, you are free (and we encourage you) to tweak various aspects of the project to personalise it even further. Here are just a few ideas you can try:
 
    - Set up more logic that will cater for a wider array of email responses. 
    - Use a different [Bootstrap](https://getbootstrap.com/) template and see if you can reproduce the results of the project.
