@@ -13,7 +13,7 @@ In this project we will make use of Python and AWS to create an intelligent data
 This project will not only showcase the skill of setting up and consuming AWS services to host a website, but will also demonstrate how to use these services in creating an intelligent Natural Language Processing (NLP) service. This NLP solution will allow us to automatically populate and send intelligent emails to interested parties based on the messages they send to our website. For example, if a potential recruiter sees a particular portfolio project on the website that interests them and contacts you regarding the said project, it is possible to set up your NLP component to pick up what the tone and key phrases are in the recruiter's message. Some smart programming techniques can then be used to automatically send a response. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Explore-AI/Pictures/master/serverless_project_process.PNG"/>
+  <img src="https://github.com/darlingtonmaposa/intelligent-email-repo/blob/main/assets/img/portfolio/email_intelligent_system_image.png"/>
     <br>
     <em>Figure 1: Cloud Computing project System Overview</em>
 
@@ -530,3 +530,6 @@ Following the conclusion of this project and its assessment, you are free (and w
 <p align="center">
   <img src="assets/img/digital_skills_logo.png" width=800px/>
 </p>
+
+
+[def]: ttps://github.com/darlingtonmaposa/intelligent-email-repo/blob/main/assets/img/portfolio/email_intelligent_system_image.pn
