@@ -10122,7 +10122,11 @@ h3 {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 220px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 @media (min-width: 992px) {
