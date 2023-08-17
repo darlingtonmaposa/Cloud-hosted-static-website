@@ -195,11 +195,7 @@ You therefore need an IAM role to give the Lambda function the required access t
 ### 6) Set-up the Initial AWS Lambda Function and the AWS API Gateway Trigger <a id='6_section_id'></a>
 ---
   
-In this step you will set up the AWS API Gateway and the initial AWS Lambda function. This will be a three-part process:
-
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
-| :--------------------                                                                                   |
-| Below is a brief description of the required three part process. You are, however, tasked with executing the three parts and little-to-no additional guidance will be give here. This is because, setting up an AWS Lambdas function is a key outcome of this course and should be something you are very familiar with by this time.| 
+In this step you will set up the AWS API Gateway and the initial AWS Lambda function. This will be a three-part process: 
 
 
 #### Part 1: Lambda Initialisation
