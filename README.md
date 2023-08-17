@@ -14,8 +14,8 @@ This project will not only showcase the skill of setting up and consuming AWS se
 
 <p align="center">
   <img src="https://github.com/darlingtonmaposa/intelligent-email-repo/blob/main/assets/img/portfolio/email_intelligent_system_image.png"/>
-    <br>
-    <em>Figure 1: Cloud Computing project System Overview</em>
+    <br> 
+    <em>Figure 1: Intelligent Email Response System Overview</em>
 
 </p>
 
@@ -60,7 +60,7 @@ In **Figure 1** the solutions architecture of this project is depicted. Below fo
         - Send emails with Amazon SES.
 
    - **Numpy ARN:**
-        - AWS Lambda runs Python on a Linux operating system. This means if we want to use popular libraries such as Numpy in your lambda function, we need to configure our Linux environment accordingly. We can do this by adding layers to our lambda function. In the case of Numpy, you will be adding the relevant layer to our Linux environment.
+        - AWS Lambda runs Python on a Linux operating system. This means if we want to use popular libraries such as Numpy in our lambda function, we need to configure our Linux environment accordingly. We can do this by adding layers to our lambda function. In the case of Numpy, we will be adding the relevant layer to our Linux environment.
 
    - **The AWS API Gateway trigger** configures a publicly accessible HTTP API which listens for POST requests from the webpage. When a request is received, its content is parsed and used to invoke the connected lambda function.   
     
@@ -70,11 +70,8 @@ In **Figure 1** the solutions architecture of this project is depicted. Below fo
     
   [Step 9:](#9_section_id) In this final step we will complete the NLP portion of the project with the use of AWS Comprehend and by defining additional program logic. At a high level, AWS Comprehend will be used to extract sentiment and key phrases from a message sent from your static website. Using programming logic, we will then define several helper methods and functions which will enable the population of an automated response if the extracted key phrases and sentiment align to specific operating conditions. 
 
----
-### 2) Modify the Portfolio Webpage Template <a id='2_section_id'></a>
----
 
-Step two in the process is where you will create your website and add your relevant data science and machine learning portfolio projects. For this step we will provide you with a baseline template which you can change freely in certain areas. 
+Step two in the process is where we will create our website and add our relevant data science and machine learning portfolio projects. For this step we will provide you with a baseline template which you can change freely in certain areas. 
 
 Below follows a brief description of the files in the bootstrap template:
 
@@ -85,7 +82,7 @@ Below follows a brief description of the files in the bootstrap template:
 | Assets/img     | n/a                      | This folder contains all the images used within the website.                    |
 | css            | style.css                | This CSS (Cascading Style Sheets) file is responsible for controlling the style i.e. look and feel of the website    |
 | js             | scripts.js               | Various scripts to increase the responsiveness and utility of the website.    |
-| Project root            | index.html               | This file defines your static web page, and will be worked on when personalising the website to meet your preferences.   
+| Project root            | index.html               | This file defines our static web page, and will be worked on when personalising the website to meet our preferences.   
 
 Within the proposed system, a database is required that will store all the data sent from the serverless hosted website. For this project, you will be using the AWS DynamoDB NoSQL database for this purpose. 
 
@@ -121,7 +118,7 @@ The following steps will help you set this service up within the AWS ecosystem:
     <em>Figure 2: Create a DynamoDB table</em>
   </p>
   
-  III. Give your table a relevant name, for example, `my-portfolio-data-table`. Store this name for use in later stages of the project.
+  III. Give our table a relevant name, for example, `my-portfolio-data-table`. Store this name for use in later stages of the project.
   
   IV. In the `Primary Key` field insert `ResponsesID` and set the type to number.
   
@@ -161,7 +158,7 @@ The following steps will help you set this service up within the AWS ecosystem:
   
   XIII. Select the created table and navigate to the `Overview` tab.
   
-  XIV. Scroll down and note your Amazon Resource Name (ARN)	for the created table. *Save this for later use in the IAM policy creation steps*.
+  XIV. Scroll down and note the Amazon Resource Name (ARN)	for the created table. *Save this for later use in the IAM policy creation steps*.
   
 --- 
 ### 5) Create an IAM Role <a id='5_section_id'></a>
@@ -212,7 +209,7 @@ Part 1 involves creating the AWS Lambda Function with a Python 3.7 runtime. You 
   
 #### Part 2: Layer Addition
 
-In part 2, the objective is to add an ARN  layer to the generated lambda function - one for Numpy. You need to add this layer so that you may use the Numpy library building your solution i.e. the Python code telling the lambdas function what to do. Remember these layers are `region` and `runtime` specific. Find your relevant ARN [here](https://github.com/keithrozario/Klayers).
+In part 2, the objective is to add an ARN  layer to the generated lambda function - one for Numpy. You need to add this layer so that you may use the Numpy library building our solution i.e. the Python code telling the lambdas function what to do. Remember these layers are `region` and `runtime` specific. Find your relevant ARN [here](https://github.com/keithrozario/Klayers).
  
 #### Part 3: API Gateway Creation
 
@@ -225,7 +222,7 @@ Your API should have the following characteristics:
  - **[Cross-origin resource sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)**: Enabled.
  - **Detailed billing**: Disabled.
 
-Once you have created the API Gateway, you should replace the URL of the endpoint in your `contact_me.js` file to your specific endpoint URL. The following steps might help you in your endeavour. 
+The following steps might should in your endeavour. 
 
  
   I. Note the `API endpoint` address under the configured trigger.
@@ -238,20 +235,20 @@ Once you have created the API Gateway, you should replace the URL of the endpoin
     <em>Figure 6: Created API Gateway</em>
   </p> 
   
-  III. Replace the existing API URL with your API endpoint.
+  III. Replace the existing API URL with the API endpoint.
   
   IV. Commit the changes and wait for the branch to be redeployed by AWS Amplify.
   
   
 | :information_source: NOTE :information_source:                                                                                                    |
 | :--------------------                                                                                                                             |
-| By this point in the process your website should enable you to fill out the form with the appropriate information and, upon submission, you should receive the `Your message has been sent` notification. |
+| By this point in the process the website should enable you to fill out the form with the appropriate information and, upon submission, you should receive the `Your message has been sent` notification. |
   
 ---
 ### 7) AWS Lambda Function for Writing to DynamoDB <a id='7_section_id'></a>
 ---
 
-You are now at a point in the project where you can start building the actual lambda functionality. Initially you will start off with the simple task of using the AWS Lambda + API Gateway to write the data coming from the website form to the previously created DynamoDB database. If needed, you can familiarise yourself with the overall process as represented within **figure 1**.
+We are now at a point in the project where you can start building the actual lambda functionality. Initially we will start off with the simple task of using the AWS Lambda + API Gateway to write the data coming from the website form to the previously created DynamoDB database.
 
   <p align="center">
   <img src="https://raw.githubusercontent.com/Explore-AI/Pictures/master/cloud-computing-project-dynamodb.gif" />
@@ -262,17 +259,17 @@ You are now at a point in the project where you can start building the actual la
 
 | :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| **Set up the lambda function to write the website POST data to DynamoDB**. To get the functionality displayed in figure 7, you will need to use Python to tell your AWS Lambda function what to do and how to do it. Luckily we have some stater code for you. You can use the code found [here](student_solution_files/basic_lambda_data_decoding.py) to read and decode the incoming data from the website. Then, using the boilerplate code found [here](student_solution_files/write_data_to_dynamodb.py) as starting point, you can enable your lambda function to write to DynamoDB.| 
+| **Set up the lambda function to write the website POST data to DynamoDB**. To get the functionality displayed in figure 7, we need to use Python to tell our AWS Lambda function what to do and how to do it. The python code is found in the solution files. 
 
 ---
 ### 8) AWS Lambda Function for Sending an Email with AWS SES <a id='8_section_id'></a>
 ---
 
-In this step you will setup AWS Simple Email Service (SES), to programmatically send emails when required. This is a two-part process: 
+In this step we will setup AWS Simple Email Service (SES), to programmatically send emails when required. This is a two-part process: 
 
  - The first part entails the verification of email addresses for the sending and receiving of messages generated by SES. 
  
- - The second part sees you configure your growing lambda function to send emails to specified addresses when triggered by a POST request being received by the API gateway.
+ - In the second part we configure the lambda function to send emails to specified addresses when triggered by a POST request being received by the API gateway.
    
 #### Part 1: Verify your Email with Amazon SES:
 
@@ -294,22 +291,21 @@ When your account is promoted out of the sandbox, you can send emails to any rec
 | You do not have to move your account out of Sandbox Mode complete the project. However, for interest, to move out of sandbox mode you can follow [these](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html) instructions. |
 
 | :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
-| :--------------------                                                                                   |
-| There are two project-related tasks for this step. The first of these is the **verification of sender and recipient email addresses**. Here you will need to add `edsa.projects@explore-ai.net` as a recipient address within SES. This email account forms part of our project assessment process and will be used at a later stage for project marking. Note that when requesting verification for this email address, *it may take up to 24 hours for confirmation to be given*. In addition to the explore email address, **you need to configure a sender and a recipient address respectively for your testing purposes**.| 
+| :--------------------                                                                                    
 
 #### Part 2: Programmatically send an email via Amazon SES:
 
-Having registered the necessary email addresses, you are now ready to invoke AWS SES within your lambda function to automate the sending of email messages. 
+Having registered the necessary email addresses, we are now ready to invoke AWS SES within our lambda function to automate the sending of email messages. 
 
 | :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| At this point we want you to once again show us your great cloud computing and python skills. The **second task involves sending a sample email to your recipient address from your sender address, using AWS SES**. Here we provide some basic guidance in the form of [this](student_solution_files/send_emails_with_ses.py) this template, which your are required to complete and to add to your lambda function in order to help you accomplish your end goal.| 
+| The **second task involves sending a sample email to your recipient address from your sender address, using AWS SES**. For this we use another python script to programmically do so.| 
 
 ---
 ### 9) AWS Lambda Function for Using Amazon Comprehend <a id='9_section_id'></a>
 ---
 
-In this final step you will be building out the project's NLP functionality with the help of AWS Comprehend. The NLP functionality will enable you to extract the overwhelming sentiment (categorical variable) from a message, as well as a list of its key phrases as determined by AWS comprehend. With the sentiment information and a list of key phrases, you can build in intelligent, automated email responses into your AWS Lambda function. To help you thoroughly understand this section, we provide a three-part breakdown wherein we describe each key element involved in the formation of an intelligent response. 
+In this final step we will be building out the project's NLP functionality with the help of AWS Comprehend. The NLP functionality will enable us to extract the overwhelming sentiment (categorical variable) from a message, as well as a list of its key phrases as determined by AWS comprehend. With the sentiment information and a list of key phrases, we can build in intelligent, automated email responses into our AWS Lambda function.
 
 The **first part** is the process description; where we go through the logic of how to use AWS comprehend to extract sentiment and key phrases. The **second part** covers the helper functions utilised; where we describe two helper functions and the main lambda function required to orchestrate an intelligent automated response. The third and **final part** is an end-to-end example; where we simulate what should be achieved once the entire AWS Lambda/AWS Comprehend/AWS SES integration is built.
 
@@ -359,7 +355,7 @@ This function extracts and returns the highest probable sentiment from a given m
   - Outputs:
     - overall_sentiment: A string representing the most probable sentiment within the message. 
     - sentiment_score: The value of the highest probable sentiment present in the message.
-  - The function implementation can be found [here](student_solution_files/find_maximum_sentiment.py)
+  
    
 **Function 2 - `key_phrase_finder(list_of_important_phrases, list_of_extracted_phrases):`**
 
@@ -370,7 +366,6 @@ This function attempts to find a match between the words in a key phrases dictio
   - Outputs: 
     - listing: An empty list to append the individual words present in the AWS Comprehend key phrases dictionary.
     - phrase_checker: A boolean variable representing the whether a match is discovered between the function's input lists.
-  - The function implementation can be found [here](student_solution_files/find_key_phrases.py)
             
 **Function 3 - `email_response(name, email_address, critical_phrase_list, sentiment_list, sentiment_scores, list_of_extracted_phrases, AWS_Comprehend_Sentiment_Dump):`**
     
@@ -386,7 +381,6 @@ This function takes in the parsed information from the sender i.e. `name`, `emai
     - AWS_Comprehend_Sentiment_Dump: The sentiment summary dictionary as populated by AWS Comprehend.
   - Outputs: 
     - Text: The intelligently populated email response based on the contents of the sender's message.
-  - - The function implementation can be found [here](student_solution_files/email_responses.py)
 
 The email_response method works as follow:
 
@@ -397,7 +391,7 @@ The email_response method works as follow:
 
 | :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| The final task of the project requires you to use the provided functions and the boilerplate AWS Comprehend/AWS Lambda code found [here](student_solution_files/aggregated_lambda_function.py) to build out the full functionality of the automated project pipeline.| 
+| The final task of the project requires us to use the provided functions and the AWS Comprehend/AWS Lambda code found [here](student_solution_files/aggregated_lambda_function.py) to build out the full functionality of the automated project pipeline.| 
       
 
 # End-to-end Example
