@@ -1,6 +1,6 @@
 # Cloud Computing Project
 
-#### Cloud Computing Project
+#### Intelligent Email Response System
 ## Overview
 
 In this project we will make use of Python and AWS to create an intelligent data engineering portfolio website. At a high-level, the website will be hosted in a serverless manner on AWS; showcasing my data engineering, cloud computing,  python, and sql projects. 
