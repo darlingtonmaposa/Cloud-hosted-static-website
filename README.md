@@ -247,8 +247,6 @@ We are now at a point in the project where you can start building the actual lam
     <em>Figure 7: Lambda writing data from the website to DynamoDB</em>
   </p> 
 
-
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
 | **Set up the lambda function to write the website POST data to DynamoDB**. To get the functionality displayed in figure 7, we need to use Python to tell our AWS Lambda function what to do and how to do it. The python code is found in the solution files. 
 
@@ -277,18 +275,14 @@ When using Amazon SES for the first time, all accounts start out in sandbox mode
 When your account is promoted out of the sandbox, you can send emails to any recipient, regardless of whether the recipient's address or domain is verified. However, you still have to verify all identities that you use as "From", "Source", "Sender", or "Return-Path" addresses.
 
 
-| :information_source: NOTE :information_source:                                                                                                         |
-| :--------------------                                                                                                                                  |
 | You do not have to move your account out of Sandbox Mode complete the project. However, for interest, to move out of sandbox mode you can follow [these](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html) instructions. |
 
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                    
 
 #### Part 2: Programmatically send an email via Amazon SES:
 
 Having registered the necessary email addresses, we are now ready to invoke AWS SES within our lambda function to automate the sending of email messages. 
 
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
 | The **second task involves sending a sample email to your recipient address from your sender address, using AWS SES**. For this we use another python script to programmically do so.| 
 
@@ -380,7 +374,6 @@ The email_response method works as follow:
   3. A `boolean` response is given for each match detected across various configured keyword categories.
   4. Given the match, or potentially multiple matches, you can set up logic to start building an email response sequentially.
 
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
 | The final task of the project requires us to use the provided functions and the AWS Comprehend/AWS Lambda code aggregated_lambda_function.py to build out the full functionality of the automated project pipeline.| 
       
