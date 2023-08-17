@@ -42,7 +42,7 @@ In **Figure 1** the solutions architecture of this project is depicted. Below fo
 
 ## Project Steps
 
-  [Step 1:](#1_section_id) In the first step we will create a **private** fork of this repo (EDSA Cloud-Computing template repo) that stores all of the code needed to host your static website. 
+  [Step 1:](#1_section_id) In the first step we will make use of GitHub, which stores all of the code needed to host our static website. 
     
   [Step 2:](#2_section_id) This step is about customising the static website to suit our needs. We will use a bootstrap template to modify the look and contents of the website to fit our preferences. 
     
