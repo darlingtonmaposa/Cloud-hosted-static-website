@@ -184,11 +184,7 @@ You therefore need an IAM role to give the Lambda function the required access t
  |**AWS Comprehend Policy** | Allows the Lambda function to call AWS Comprehend in order calculate a sentiment score and extract key phrases from received text entered on the website. |
  |**AWS SES Policy** | Allows the Lambda function to invoke the AWS SES service in order to send automated responses via email. |
  |**AWS Basic Lambda Execution Policy** | Grants the Lambda function permission to access AWS services and resources. |
- |**AWS DynamoDB Policy** | Gives the Lambda function write permissions in order to store data from the website to a designated (existing) AWS DynamoDB table. |
-
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
-| :--------------------                                                                                    
-
+ |**AWS DynamoDB Policy** | Gives the Lambda function write permissions in order to store data from the website to a designated (existing) AWS DynamoDB table. |                                                                          
 
 ---
 ### 6) Set-up the Initial AWS Lambda Function and the AWS API Gateway Trigger <a id='6_section_id'></a>
