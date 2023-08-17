@@ -187,8 +187,7 @@ You therefore need an IAM role to give the Lambda function the required access t
  |**AWS DynamoDB Policy** | Gives the Lambda function write permissions in order to store data from the website to a designated (existing) AWS DynamoDB table. |
 
 | :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
-| :--------------------                                                                                   |
-| You are tasked with **using the AWS IAM service to set up the necessary policies as described above**. It is important to remember that the DynamoDB policy will be of type inline, and that you will need to use the specific DynamoDB table ARN associated with the table you created in [Step 4](#4_section_id) to appropriately set up this policy.| 
+| :--------------------                                                                                    
 
 
 ---
