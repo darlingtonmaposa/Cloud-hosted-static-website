@@ -22,7 +22,7 @@ This project will not only showcase the skill of setting up and consuming AWS se
 
 In **Figure 1** the solutions architecture of this project is depicted. Below follows a brief description of each module in the system:
 
->- [x] **[GitHub Template Repo:](https://github.com/)** This dedicated EXPLORE template repo which houses all the content and instructions for a student to complete the project. 
+>- [x] GitHub repo which houses all the content to complete the project. 
 >
 >- [x] **[AWS Lambda:](https://aws.amazon.com/lambda/)** A serverless compute instance responsible for multiple processing steps:
 >      - Stores the enquiry details within an AWS DynamoDB instance for later retrieval.
