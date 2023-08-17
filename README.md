@@ -3,7 +3,7 @@
 #### Cloud Computing Project
 ## Overview
 
-In this project we will make use of Python and AWS to create an intelligent data science portfolio website. At a high-level, the website will be hosted in a serverless manner on AWS; showcasing your amazing data science, machine learning and AI projects. 
+In this project we will make use of Python and AWS to create an intelligent data engineering portfolio website. At a high-level, the website will be hosted in a serverless manner on AWS; showcasing data engineering, cloud computing python, and sql projects. 
 
 <p align="center">
   <img src="https://github.com/Explore-AI/Pictures/blob/master/ezgif.com-gif-maker.gif?raw=true"/>
@@ -391,7 +391,7 @@ The email_response method works as follow:
 
 | :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
 | :--------------------                                                                                   |
-| The final task of the project requires us to use the provided functions and the AWS Comprehend/AWS Lambda code found [here](student_solution_files/aggregated_lambda_function.py) to build out the full functionality of the automated project pipeline.| 
+| The final task of the project requires us to use the provided functions and the AWS Comprehend/AWS Lambda code aggregated_lambda_function.py to build out the full functionality of the automated project pipeline.| 
       
 
 # End-to-end Example
@@ -400,7 +400,7 @@ In this section we will review a basic example of how an email response is gener
 
 Let's say someone visiting your deployed webpage posts the following sample message using the form:
 
-> Hi Explore Data Science Student,
+> Hi Explore Data Engineering Student,
 >
 > I love your website and your portfolio projects. I also had a look at your GitHub page and I am quite impressed with the quality of your work.
 >
@@ -416,7 +416,7 @@ Let's say someone visiting your deployed webpage posts the following sample mess
 > 
 > Senior HR Manager, Real Analytics Resources
 
-Running this message through our AWS Comprehend service produces [these](student_solution_files/Example_AWS_Comprehend_Key_Phrases_Output.txt) key phrases and [this](student_solution_files/Example_AWS_Comprehend_Sentiment_Output.txt) sentiment classification output.
+Running this message through our AWS Comprehend service produces [these](solution_files/Example_AWS_Comprehend_Key_Phrases_Output.txt) key phrases and [this](solution_files/Example_AWS_Comprehend_Sentiment_Output.txt) sentiment classification output.
 
 From this output it can be seen that AWS Comprehend picked up that the message has a positive sentiment, and that it contains key phrases such as: 'your portfolio projects', 'your GitHub page', 'Your medium articles', 'a potential job', etc. We can therefore set up some logic along with our helper functions to build out our responses.
 
@@ -493,37 +493,8 @@ Remember that in the example additional keywords were present such as: `CV`, `pr
 > MyName
    
 | :information_source: NOTE :information_source:                                                                                                         |
-| :--------------------                                                                                                                                  |
-| The boilerplate lambda function for the full solution can be found [here](student_solution_files/aggregated_lambda_function.py) |
-
-## project Assessment
-
-| :triangular_flag_on_post: project TASK :triangular_flag_on_post:                                                                                      |
-| :--------------------                                                                                   |
-| Please ensure that all the below information is submitted in order to be fairly marked on your performance in completing this project.| 
-
-Once completed, your project solution will be marked at a time indicated within the project Overview Slides and as communicated on Athena. To facilitate this assessment, please submit the following details via the project Submission tab on Athena using [this](student_solution_files/project_detail_submission_template.csv) simple template: 
- - Your **Name and Surname**; 
- - The **Website URL** of your deployed project as recorded in [Step 3](#3_section_id) of this guide, and 
- - Your **AWS API Gateway URL** as recorded in part 3 of [Step 6](#6_section_id). 
-
-Please also ensure that you have verified the `edsa.projects@explore-ai.net` email address via AWS SES as instructed in step 8, part 1. 
-
-Note that while you are free to personalise many aspects of this project, for assessment purposes you will only be awarded marks for its functionality. As such, please make every effort to ensure that your completed project solution is able to replicate the functioning specified throughout the above instruction steps.  
+| :--------------------                                                                                                     
 
 ## Conclusion
-
-If you followed the nine-step process described above correctly, you should now have a fully functioning portfolio website capable of sending intelligent email responses in an automated way. Congrats! 
-
-Following the conclusion of this project and its assessment, you are free (and we encourage you) to tweak various aspects of the project to personalise it even further. Here are just a few ideas you can try:
-
-   - Set up more logic that will cater for a wider array of email responses. 
-   - Use a different [Bootstrap](https://getbootstrap.com/) template and see if you can reproduce the results of the project.
-   - Integrate more AWS services. For example, see if you can integrate AWS QuickSight to visualize the data in your AWS DynamoDB NoSQL database. Alternatively, you could try to use the [AWS Lex](https://aws.amazon.com/lex/) service to place a chatbot on your profile page, adding another layer of intelligent interaction to engage potential clients.
-
-<p align="center">
-  <img src="assets/img/digital_skills_logo.png" width=800px/>
-</p>
-
 
 [def]: ttps://github.com/darlingtonmaposa/intelligent-email-repo/blob/main/assets/img/portfolio/email_intelligent_system_image.pn
