@@ -1,9 +1,9 @@
-# Cloud Computing Project
+# Serverless NLP Data Pipeline on AWS
 
-#### Intelligent Email Response System
+#### Event-driven serverless workflow that ingests, enriches, persists, and operationalises unstructured text using AWS managed services.
 ## Overview
 
-In this project we will make use of Python and AWS to create an intelligent data engineering portfolio website. At a high-level, the website will be hosted in a serverless manner on AWS; showcasing my data engineering, cloud computing,  python, and sql projects. 
+This project implements a serverless, event-driven data engineering pipeline on AWS that transforms unstructured website enquiries into structured insights and automated responses. It leverages **Python orchestration, Lambda, API Gateway, DynamoDB, Comprehend, SES, and Amplify**, showcasing **scalable, real-time cloud-native workflows** and production-grade architecture patterns. 
 
 <p align="center">
   <img src="https://github.com/Explore-AI/Pictures/blob/master/ezgif.com-gif-maker.gif?raw=true"/>
