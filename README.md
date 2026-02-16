@@ -3,7 +3,7 @@
 #### Event-driven serverless workflow that ingests, enriches, persists, and operationalises unstructured text using AWS managed services.
 ## Overview
 
-This project implements a serverless, event-driven data engineering pipeline on AWS that transforms unstructured website enquiries into structured insights and automated responses. It leverages **Python orchestration, Lambda, API Gateway, DynamoDB, Comprehend, SES, and Amplify**, showcasing **scalable, real-time cloud-native workflows** and production-grade architecture patterns. 
+This project implements a **serverless, event-driven data engineering pipeline on AWS** that transforms unstructured website enquiries into structured insights and automated responses. It leverages **Python orchestration, Lambda, API Gateway, DynamoDB, Comprehend, SES, and Amplify**, showcasing **scalable, real-time cloud-native workflows** and production-grade architecture patterns. 
 
 <p align="center">
   <img src="https://github.com/Explore-AI/Pictures/blob/master/ezgif.com-gif-maker.gif?raw=true"/>
